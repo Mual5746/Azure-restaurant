@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Restaurants.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Restaurants.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Restaurants.Application.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Restaurants.Application/1.0.0": {
+      "type": "project",
+      "path": "../Restaurants.Application/Restaurants.Application.csproj",
+      "msbuildProject": "../Restaurants.Application/Restaurants.Application.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Restaurants.Application >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/megamax/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Infrastructure/Restaurants.Infrastructure.csproj",
+      "projectName": "Restaurants.Infrastructure",
+      "projectPath": "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Infrastructure/Restaurants.Infrastructure.csproj",
+      "packagesPath": "/Users/megamax/.nuget/packages/",
+      "outputPath": "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Infrastructure/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/megamax/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Application/Restaurants.Application.csproj": {
+              "projectPath": "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Application/Restaurants.Application.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.402/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
