@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/megamax/Documents/repos/resturant-azure/Restaurant.Domain/Restaurants.Domain.csproj": {}
+    "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/Restaurants.Domain.csproj": {}
   },
   "projects": {
-    "/Users/megamax/Documents/repos/resturant-azure/Restaurant.Domain/Restaurants.Domain.csproj": {
+    "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/Restaurants.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/megamax/Documents/repos/resturant-azure/Restaurant.Domain/Restaurants.Domain.csproj",
+        "projectUniqueName": "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/Restaurants.Domain.csproj",
         "projectName": "Restaurants.Domain",
-        "projectPath": "/Users/megamax/Documents/repos/resturant-azure/Restaurant.Domain/Restaurants.Domain.csproj",
+        "projectPath": "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/Restaurants.Domain.csproj",
         "packagesPath": "/Users/megamax/.nuget/packages/",
-        "outputPath": "/Users/megamax/Documents/repos/resturant-azure/Restaurant.Domain/obj/",
+        "outputPath": "/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/megamax/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -40,8 +40,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -53,22 +53,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.19, 7.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.19, 7.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

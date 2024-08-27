@@ -1,0 +1,12 @@
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/bin/Debug/net7.0/Restaurants.Domain.deps.json
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/bin/Debug/net7.0/Restaurants.Domain.dll
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/bin/Debug/net7.0/Restaurants.Domain.pdb
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/Debug/net7.0/Restaurants.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/Debug/net7.0/Restaurants.Domain.AssemblyInfoInputs.cache
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/Debug/net7.0/Restaurants.Domain.AssemblyInfo.cs
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/Debug/net7.0/Restaurants.Domain.csproj.CoreCompileInputs.cache
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/Debug/net7.0/Restaurants.Domain.sourcelink.json
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/Debug/net7.0/Restaurants.Domain.dll
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/Debug/net7.0/refint/Restaurants.Domain.dll
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/Debug/net7.0/Restaurants.Domain.pdb
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.Domain/obj/Debug/net7.0/ref/Restaurants.Domain.dll
