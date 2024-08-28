@@ -136,3 +136,4 @@
 /Users/megamax/Documents/repos/resturant-azure/Restaurants.API/obj/Debug/net8.0/Restaurants.API.csproj.AssemblyReference.cache
 /Users/megamax/Documents/repos/resturant-azure/Restaurants.API/obj/Debug/net8.0/Restaurants.API.sourcelink.json
 /Users/megamax/Documents/repos/resturant-azure/Restaurants.API/obj/Debug/net8.0/Restaura.7AF479EB.Up2Date
+/Users/megamax/Documents/repos/resturant-azure/Restaurants.API/bin/Debug/net8.0/AutoMapper.dll
