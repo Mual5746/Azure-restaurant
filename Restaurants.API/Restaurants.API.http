@@ -1,0 +1,17 @@
+
+### variables 
+@host = http://localhost:5178
+@port = 5178
+
+@projectUrl = {host}}/api/weatherforecast/exemple
+
+### Get REquest 
+POST  {{host}}/api/weatherforecast/generate?count=3
+Content-Type: application/json
+
+{
+    "min": 24,
+    "max": 23
+}
+
+
