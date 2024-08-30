@@ -30,6 +30,16 @@ public class RetaurantsController(IMediator mediator) : ControllerBase
         return Ok(restaurant);
         
     }
+      [HttpPatch("{id}")]
+    public async Task<IActionResult> UpdateRestaurant([FromRoute] int id, UpdateRestaurantCommand command)
+    {
+        command.Id = id;
+        var isUpdated = await mediator.Send(command);
+           if (isUpdated)
+            return NoContent();
+
+        return NotFound();
+    }
       [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteRestaurant([FromRoute] int id)
     {
