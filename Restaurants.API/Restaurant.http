@@ -1,0 +1,38 @@
+
+@port = 5178
+@RestaurantsAPIHostAddress = https://localhost:5178
+
+###
+GET http://localhost:5178/api/restaurants/10
+
+###
+DELETE http://localhost:5178/api/restaurants/38
+###
+POST http://localhost:5178/api/restaurants
+Content-Type: application/json
+
+{
+      "Name": "Tasty Tests",
+      "Description": "A cozy restaurant serving a variety of delicious dishes.",
+      "Category": "Indian",
+      "HasDelivery": true,
+      "ContactEmail": "info@test.com",
+      "ContactNumber": "555-1234",
+      "City": "New York",
+      "Street": "123 Main Street",
+      "PostalCode": "10-010"
+}
+
+###
+
+
+PATCH http://localhost:5178/api/restaurants/41
+Content-Type: application/json
+
+{
+  "Name": "Sample patch2",
+  "Description": "This is a sample restaurant description.",
+  "HasDelivery": false
+}
+
+###
