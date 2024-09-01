@@ -1,9 +1,7 @@
 
 using Restaurants.Infrastructure.Extentions;
-using Restaurants.Infrastructure.Seeders;
 using Restaurants.Application.Extensions;
 using Serilog;
-using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,16 +19,41 @@ builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Host.UseSerilog((context, configuration) => 
-    configuration
-    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-    .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Information )
-    .WriteTo.Console( outputTemplate: " [{Timestamp:dd-MM HH:mm:ss} {Level:u3}] |{SourceContext}| {NewLine}{Message:lj}{NewLine}{Exception}" )
-
+    configuration.ReadFrom.Configuration(context.Configuration)
 
     /*
         .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
         .MinimumLevel.Override("Microsoft.EntityFrameworkCore", LogEventLevel.Information)
         .WriteTo.Console(outputTemplate: "[{Timestamp:dd-MM HH:mm:ss} {Level:u3}] |{SourceContext}| {NewLine}{Message:lj}{NewLine}{Exception}")
+    */ 
+
+    /* Flyssta till appsetings
+
+    "Serilog": {
+        "MinimumLevel": {
+            "Override": {
+                "Microsoft": "Warning",
+                "Microsoft.EntityFrameworkCore": "Information"
+            }
+            },
+            "WriteTo": [
+            {
+                "Name": "Console",
+                "Args": {
+                "outputTemplate": "[{Timestamp:dd-MM HH:mm:ss} {Level:u3}] |{SourceContext}| {NewLine}{Message:lj}{NewLine}{Exception}"
+                }
+            },
+            {
+                "Name": "File",
+                "Args": {
+                "path": "Logs/Restaurant-Api-.log",
+                "rollingInterval": "Day",
+                "rollOnFileSizeLimit": true,
+                "formatter": "Serilog.Formatting.Compact.CompactJsonFormatter, Serilog.Formatting.Compact"
+                }
+            }
+            ]
+        }
     */
 );
 
