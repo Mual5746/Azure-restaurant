@@ -3,7 +3,7 @@
 @RestaurantsAPIHostAddress = https://localhost:5178
 
 ###
-GET http://localhost:5178/api/restaurants
+GET http://localhost:5178/api/restaurants/66
 
 ###
 DELETE http://localhost:5178/api/restaurants/38
