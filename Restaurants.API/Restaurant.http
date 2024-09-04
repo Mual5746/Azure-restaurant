@@ -3,7 +3,7 @@
 @RestaurantsAPIHostAddress = https://localhost:5178
 
 ###
-GET http://localhost:5178/api/restaurants/66
+GET http://localhost:5178/api/restaurants
 
 ###
 DELETE http://localhost:5178/api/restaurants/38
@@ -33,6 +33,20 @@ Content-Type: application/json
   "Name": "Sample patch2",
   "Description": "This is a sample restaurant description.",
   "HasDelivery": false
+}
+
+###
+
+###
+
+POST http://localhost:5178/api/restaurants/1/dishes
+Content-Type: application/json
+
+{
+  "Name": "Spaghetti Bolognese",
+  "Description": "Classic Italian pasta dish with rich meat sauce",
+  "Price": 12.99,
+  "KiloCalories": 750
 }
 
 ###
