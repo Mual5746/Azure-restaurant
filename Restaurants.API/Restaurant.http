@@ -55,7 +55,7 @@ GET http://localhost:5178/api/restaurants/1/dishes
 
 ###
 
-GET http://localhost:5178/api/restaurants/1/dishes/1
+GET http://localhost:5178/api/restaurants/1/dishes/1007
 
 ###
 
