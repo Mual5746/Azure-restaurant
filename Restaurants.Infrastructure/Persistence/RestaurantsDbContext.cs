@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Restaurants.Domain.Entities;
 
@@ -10,7 +11,8 @@ namespace Restaurants.Infrastructure.Persistence
      applikationen utföra operationer på restauranger och deras rätter utan att behöva skriva rå 
      SQL-kod.
     */
-    internal class RestaurantsDbContext(DbContextOptions<RestaurantsDbContext> options) : DbContext(options) {
+    internal class RestaurantsDbContext(DbContextOptions<RestaurantsDbContext> options) 
+    : IdentityDbContext<User>(options) {
     /*
      Konstruktorn tar en DbContextOptions<RestaurantsDbContext> 
     parameter, som innehåller konfigurationen för databaskopplingen (t.ex. vilken databas som ska 
