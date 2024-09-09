@@ -5,6 +5,7 @@ using Serilog;
 using Restaurants.API.Middlewares;
 using Restaurants.Domain.Entities;
 using Restaurants.API.Extensions;
+using Restaurants.Infrastructure.Seeders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,8 +23,8 @@ builder.Services.AddInfrastructure(builder.Configuration);
 var app = builder.Build();
 
 var scope = app.Services.CreateScope();
-//var seeder = scope.ServiceProvider.GetRequiredService<IRestaurantSeeder>();
-//await seeder.Seed();
+var seeder = scope.ServiceProvider.GetRequiredService<IRestaurantSeeder>();
+await seeder.Seed();
 app.UseMiddleware<ErrorHandlingMiddleware>();
 // Configure the HTTP request pipeline.
 app.UseSerilogRequestLogging();
