@@ -2,11 +2,20 @@
 @port = 5178
 @RestaurantsAPIHostAddress = https://localhost:5178
 
+
+@accesstoken = "CfDJ8DUjQQoq1BdPnAGw9XkYIJoFPcwvnctYSFeMby8uWwJsRsZ_uXJdCrWQdhqF5bzzzr7n1XFwomS7j-M7YtN7skH2mOk7MfcetMPJ16iX91qm3efND8xNSUYQ4dlPo_nEBVCa-Cb9FqB9BHyo44UO2G19XFXijeLbZzFhfDWECuaCKgTSdonpMLYdyzXve16e_eJSinAXVRh1aYKqghiWezV44i515ymFqYQ8Q2cT5JqjLJB0kXeySak4xHfMJC9X1ZewFRGowc7TtkNGYrdslGeXdE0dNsrBcK1K6ME83Xx5_E8O6rCf3CuKSGKQmp1-C_uh6ojEhujuiiw9Mpknhr23WGpvj9MPdz7_RiU0msd-4QHwzoZy7c7iUKzESOOcUUpkd9JJdlG32JWLP1WWIa6ad3Pj8UdLlOKElylgRo_yxmH3xkTYzmwqKdX5q-5gltTzfbVesc4LAyuZNzsr15QiOo-73HXuBRdpj2xQt-irOR-NUNSu2l8pAcNCSClGGdkasFVaqlA0DlxWoYKDwVJIpI-CvjBmWm61sUU1_ojZCCf-oMOQPAICNX1CHJokA2BWZy-OQVp-JxE7G5Ekf0ZsAUbTE5y--7I4TNxF7a7zn83g-A185nlud78sI9CENCQecirG5dcGmnZreZp5yUYHgSygNqku3m8r-_y5G2x7ARm-VmRPd4wbTLXg_8WXUw"
+
+
+
+
+
 ###
 GET http://localhost:5178/api/restaurants
+#Authorization: Bearer{{accesstoken}}
 
 ###
 DELETE http://localhost:5178/api/restaurants/38
+Authorization: Bearer{{accesstoken}}
 ###
 POST http://localhost:5178/api/restaurants
 Content-Type: application/json
@@ -62,7 +71,7 @@ GET http://localhost:5178/api/restaurants/1/dishes/1007
 DELETE http://localhost:5178/api/restaurants/1/dishes
 
 ###
-POST  http://localhost:5178/register
+POST  http://localhost:5178/api/identity/register
 Content-Type: application/json
 
 {
@@ -72,7 +81,7 @@ Content-Type: application/json
 
 ###
 
-POST  http://localhost:5178/login
+POST  http://localhost:5178/api/identity/login
 Content-Type: application/json
 
 {
