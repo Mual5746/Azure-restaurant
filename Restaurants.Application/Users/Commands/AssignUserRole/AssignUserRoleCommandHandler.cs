@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 using Restaurants.Domain.Entities;
 using Restaurants.Domain.Exceptions;
 
-namespace Restaurants.Application.Users.Commands.AssignRole;
+namespace Restaurants.Application.Users.Commands.AssignUserRole;
 
 public class AssignUserRoleCommandHandler(ILogger<AssignUserRoleCommandHandler> logger
  , UserManager<User> userManager,
