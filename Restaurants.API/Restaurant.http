@@ -90,3 +90,8 @@ Content-Type: application/json
 }
 
 ###
+
+
+GET http://localhost:5178/api/restaurants/?searchPhrase=kfc
+
+###
