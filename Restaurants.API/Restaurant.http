@@ -92,6 +92,6 @@ Content-Type: application/json
 ###
 
 
-GET http://localhost:5178/api/restaurants/?searchPhrase=kfc&pageSize=10&pageNumber=1
+GET http://localhost:5178/api/restaurants/?searchPhrase=kfc&pageSize=5&pageNumber=-1
 
 ###
