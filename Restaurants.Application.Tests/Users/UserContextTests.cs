@@ -41,11 +41,11 @@ public class UserContextTests
         // asset 
 
         CurrentUser.Should().NotBeNull();
-        CurrentUser.Id.Should().Be("1");
-        CurrentUser.Email.Should().Be("test@test.com");
-        CurrentUser.Roles.Should().ContainInOrder(UserRoles.Admin, UserRoles.User);
-        CurrentUser.Nationality.Should().Be("Svensk");
-        CurrentUser.DateOfBirth.Should().Be(dateOfBirth);
+        CurrentUser?.Id.Should().Be("1");
+        CurrentUser?.Email.Should().Be("test@test.com");
+        CurrentUser?.Roles.Should().ContainInOrder(UserRoles.Admin, UserRoles.User);
+        CurrentUser?.Nationality.Should().Be("Svensk");
+        CurrentUser?.DateOfBirth.Should().Be(dateOfBirth);
     }
 
   [Fact]
@@ -54,7 +54,7 @@ public class UserContextTests
         //ARRANGE
 
         var httpContextAccessorMock = new Mock<IHttpContextAccessor>();
-        httpContextAccessorMock.Setup(x => x.HttpContext).Returns((HttpContext)null);
+        httpContextAccessorMock.Setup(x => x.HttpContext).Returns((HttpContext)null!);
 
         //var UserContext = new UserContext(httpContextAccessor.Object);
         var userContext = new UserContext(httpContextAccessorMock.Object);
